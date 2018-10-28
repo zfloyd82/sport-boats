@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="sports_boats_pythag.js"></script>
+    <link rel="stylesheet" href="sports_boats_main_style.css">
+</head>
+<body>
+    <h1>SPORT HAS A BOAT AND NEEDS HELP</h1>
+    
+    <form>
+        Let's grab some info, bud!<br>
+        Input data in <strong>FEET.</strong><br><br>
+        
+        <input type="number" name="mastHeight" min="0" 
+        placeholder="HEIGHT OF MAST" size="50"><br>
+        
+        <input type="number" name="toTip" min="0"
+        placeholder="MAST; LENGTH --> BOW"><br>
+        
+        <button type="button" onclick="mastLength()">CALCULATE MAST
+        LENGTH</button><br><br>
+        
+        <input type="number" name="boatWidth" min="0"
+        placeholder="WIDTH OF BOAT"><br>
+        
+        <input type="number" name="boatLength" min="0"
+        placeholder="LENGTH OF BOAT"><br>
+        
+        <button type="button" onclick="boatDiagonal(mastLength)">CALCULATE 
+        DIAGONAL OF BOAT</button><br><br>
+
+        <button type="button" onclick="boatTotal(mastLength, boatDiagonal)">
+        CALCULATE TOTAL MAYBE?</button><br><br>
+    </form>
+    
+    <div class="boldedThings">
+        <h2>The length of the mast (+2ft) is:</h2>
+        <p id="mastLength"></p>
+    
+        <h2>The diagonal of the boat (+2ft) is:</h2>
+        <p id="boatDiagonal"></p>
+
+        <h2>The sum of the boat measurements you might need this maybe is?</h2>
+        <p id="boatTotal"></p>
+    
+        <h6>Sporto Boat-o</h6>
+        <img src="sport-boat-bg.jpg" alt="sport on the boat"
+        title="Sport on the Boat" class="center">
+    </div>
+</body>
+</html>
